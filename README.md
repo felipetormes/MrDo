@@ -1,5 +1,5 @@
 # MrDo
-Game desenvolvido em C.
+Game desenvolvido em C, a única biblioteca que não é padrão no jogo é a conio.
 
 ## Comandos
 - Para comandar os movimentos do MrDo na tecla são usadas as teclas: W(Cima), S(Baixo), A(Esquerda), D(Direita);
