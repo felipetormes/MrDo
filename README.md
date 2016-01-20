@@ -9,6 +9,7 @@ Game desenvolvido em C.
 ## Estruturas
 
 typedef struct {
+
     char name[TAMHIGHSCORES];
     int score;
 } HIGHSCORE;
