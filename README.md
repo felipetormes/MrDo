@@ -2,9 +2,9 @@
 Game desenvolvido em C.
 
 ## Comandos
-Para comandar os movimentos do MrDo na tecla são usadas as teclas: W(Cima), S(Baixo), A(Esquerda), D(Direita);
-Para pausar o jogo deve ser pressionada a tecla ESPAÇO;
-Os outros comandos são informados ao longo do game.
+- Para comandar os movimentos do MrDo na tecla são usadas as teclas: W(Cima), S(Baixo), A(Esquerda), D(Direita);
+- Para pausar o jogo deve ser pressionada a tecla ESPAÇO;
+- Os outros comandos são informados ao longo do game.
 
 ## Estruturas
 typedef struct (Implementada)
@@ -22,9 +22,13 @@ typedef struct //Essa estrutura e as proximas duas estavam sendo usadas para o i
 typedef struct
 {
     int y;
+    
     int x;
+    
     int lastDirection;  // 0 = cima, 1 = esquerda, 2 = baixo, 3 = direita
+    
     char status;
+    
 } COORDENADAS;
 
 ## Funções:
