@@ -1,10 +1,11 @@
 # MrDo
-Game desenvolvido em C, a única biblioteca que não é padrão no jogo é a conio.
+Game desenvolvido na linguagem C como trabalho final para a disciplina de Algoritmos e Programação da UFRGS. A única biblioteca que não é padrão no jogo é a conio.
 
 ## Comandos
-- Para comandar os movimentos do MrDo na tecla são usadas as teclas: W(Cima), S(Baixo), A(Esquerda), D(Direita);
-- Para pausar o jogo deve ser pressionada a tecla ESPAÇO;
-- Os outros comandos são informados ao longo do game.
+
+* Para comandar os movimentos do MrDo na tecla são usadas as teclas: W(Cima), S(Baixo), A(Esquerda), D(Direita);
+* Para pausar o jogo deve ser pressionada a tecla ESPAÇO;
+* Os outros comandos são informados ao longo do game.
 
 ## Estruturas
 ```c
@@ -33,18 +34,20 @@ typedef struct {
 ```
 
 ## Funções:
-- void mov(char mat[NUMLIN][NUMCOL], int pos_fru[][2], int pos_ninho[2], int pos_do[2], FILE *fp, FILE *continuar, int pos_fant[][2]);
-- int abre_le_matriz(char mat[NUMLIN][NUMCOL], FILE *fp, char nome[20]);
-- int abre_le_imprime_continuar(char mat[NUMLIN][NUMCOL], FILE *continuar, char continua[20], int score);
-- void patrocinio_ea(void);
-- void patrocinio_inf(void);
-- int menu();
-- void opcao_salvar(char mat[NUMLIN][NUMCOL], int pos_fru[][2], int pos_ninho[2], int pos_do[2], FILE *fp, FILE *continuar, int - pos_fant[][2], int score);
-- void barreira_horizontal_cima(void);
-- void barreira_horizontal_baixo(void);
-- void imprime_matriz(char mat[NUMLIN][NUMCOL]);
-- void salvar_elementos_cenario(char mat[NUMLIN][NUMCOL], int pos_fru[][2], int pos_ninho[2], int pos_do[2]);
-- int abre_le_matriz_fase_dois(char mat[NUMLIN][NUMCOL], FILE *fp);
-- void grava_highscore(int score, int op, char mat[NUMLIN][NUMCOL],int pos_fru[][2], int pos_ninho[2], int pos_do[2], FILE *fp, - FILE *continuar, int pos_fant[][2]);
-- void le_bin();
-- void inic_random();
+```c
+void mov(char mat[NUMLIN][NUMCOL], int pos_fru[][2], int pos_ninho[2], int pos_do[2], FILE *fp, FILE *continuar, int pos_fant[][2]);
+int abre_le_matriz(char mat[NUMLIN][NUMCOL], FILE *fp, char nome[20]);
+int abre_le_imprime_continuar(char mat[NUMLIN][NUMCOL], FILE *continuar, char continua[20], int score);
+void patrocinio_ea(void);
+void patrocinio_inf(void);
+int menu();
+void opcao_salvar(char mat[NUMLIN][NUMCOL], int pos_fru[][2], int pos_ninho[2], int pos_do[2], FILE *fp, FILE *continuar, int - pos_fant[][2], int score);
+void barreira_horizontal_cima(void);
+void barreira_horizontal_baixo(void);
+void imprime_matriz(char mat[NUMLIN][NUMCOL]);
+void salvar_elementos_cenario(char mat[NUMLIN][NUMCOL], int pos_fru[][2], int pos_ninho[2], int pos_do[2]);
+int abre_le_matriz_fase_dois(char mat[NUMLIN][NUMCOL], FILE *fp);
+void grava_highscore(int score, int op, char mat[NUMLIN][NUMCOL],int pos_fru[][2], int pos_ninho[2], int pos_do[2], FILE *fp, - FILE *continuar, int pos_fant[][2]);
+void le_bin();
+void inic_random();
+```
