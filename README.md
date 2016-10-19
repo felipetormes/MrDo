@@ -7,26 +7,30 @@ Game desenvolvido em C, a única biblioteca que não é padrão no jogo é a con
 - Os outros comandos são informados ao longo do game.
 
 ## Estruturas
-
+```c
 typedef struct {
-
     char name[TAMHIGHSCORES];
     int score;
 } HIGHSCORE;
 
+```
+
+```c
 //Essa estrutura e as proximas duas estavam sendo usadas para o implemento dos fantasmas, mas tiveram pequenos bugs na hora de rodar o codigo
 typedef struct {
     int score;
     int ghosts;
 } GameState;
+```
 
+```c
 typedef struct {
-
     int y;
     int x;
     int lastDirection;  // 0 = cima, 1 = esquerda, 2 = baixo, 3 = direita
     char status;
 } COORDENADAS;
+```
 
 ## Funções:
 - void mov(char mat[NUMLIN][NUMCOL], int pos_fru[][2], int pos_ninho[2], int pos_do[2], FILE *fp, FILE *continuar, int pos_fant[][2]);
